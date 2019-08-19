@@ -28,18 +28,18 @@
 		var max = 0;
 		for (var salary in salaries) {
 
-			if (max < (salaries[salary])) {
-				max = (salaries[salary]);
+			if (max < salaries[salary]) {
+				max = salaries[salary];
 			}
 		};
 		
 		return max;
 	};
 
+	let sum = 0;
 	function isEmpty(salaries) {
-	    for(var salary in salaries) {
-	        if(salaries.hasOwnProperty(salary))
-	            return false;
+	    for (var salary in salaries) {
+	    	return sum += salaries-[salary];	
 	    }
 	    return true;
 	}
@@ -63,7 +63,7 @@
 
 		var abc = [];
 		for(var i = 0; i < arr.length; i++) {
-			abc.push(square(arr[i]))
+			abc.push(fn(arr[i]))
 		}
 		return abc;
 	};
